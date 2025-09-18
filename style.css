@@ -1,0 +1,150 @@
+:root {
+    --yellow-color: hsl(47, 88%, 63%);
+    --white-color: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+    --card-radius: 20px;
+    --line-height-base: 150%;
+
+    --spacing: 0px;
+
+    /* Typography */
+    --font-size-base: 16px;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url("./assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+    font-weight: 500 800;
+}
+
+/* Define font styles : Medium , Semi-Bold , Bold , Extra-Bold */
+.font-medium {
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+}
+
+.font-semi-bold {
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+}
+
+.font-bold {
+    font-family: "Figtree", sans-serif;
+    font-weight: 700;
+}
+
+.font-extra-bold {
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--gray-500);
+    background-color: var(--yellow-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    letter-spacing: var(--spacing);
+}
+
+.card {
+    background-color: var(--white-color);
+    border-radius: var(--card-radius);
+    max-width: 384px;
+    padding: 24px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray-950);
+    filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 1));
+    cursor: pointer;
+}
+
+.card__image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card__image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card__content .badge {
+    padding: 4px 12px;
+    background-color: var(--yellow-color);
+    color: var(--gray-950);
+    height: 29px;
+    width: fit-content;
+    border-radius: 4px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card__content .published {
+    font-size: 14px;
+    color: var(--gray-950);
+}
+
+.card__content h1 {
+    font-size: 24px;
+    color: var(--gray-950);
+}
+
+.card__content p {
+    font-size: 16px;
+    color: var(--gray-500);
+}
+
+.card__author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card__author img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.card__author p {
+    font-size: 14px;
+    color: var(--gray-950);
+    font-weight: 700;
+}
+
+/* HOVERING */
+.card:hover .card__content h1 , .card:focus .card__content h1 {
+    color: var(--yellow-color);
+    transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .card {
+        max-width: 327px;
+        padding: 16px;
+    }
+}
