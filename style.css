@@ -48,7 +48,6 @@
 body {
     font-family: "Figtree", sans-serif;
     font-size: var(--font-size-base);
-    line-height: var(--line-height-base);
     color: var(--gray-500);
     background-color: var(--yellow-color);
     width: 100vw;
@@ -68,7 +67,8 @@ body {
     gap: 24px;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--gray-950);
+    box-shadow: inset 0 0 0 1px var(--gray-950);
+    border: none;
     filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 1));
     cursor: pointer;
 }
@@ -76,11 +76,14 @@ body {
 .card__image {
     width: 100%;
     border-radius: 10px;
+    height: 200px;
 }
 
 .card__image img {
     width: 100%;
     border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
 }
 
 .card__content {
@@ -100,27 +103,33 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    line-height: var(--line-height-base);
+
 }
 
 .card__content .published {
     font-size: 14px;
     color: var(--gray-950);
+    line-height: var(--line-height-base);
 }
 
 .card__content h1 {
     font-size: 24px;
     color: var(--gray-950);
+    line-height: var(--line-height-base);
 }
 
 .card__content p {
     font-size: 16px;
     color: var(--gray-500);
+    line-height: var(--line-height-base);
 }
 
 .card__author {
     display: flex;
     align-items: center;
     gap: 12px;
+    line-height: var(--line-height-base);
 }
 
 .card__author img {
@@ -133,6 +142,7 @@ body {
     font-size: 14px;
     color: var(--gray-950);
     font-weight: 700;
+    line-height: var(--line-height-base);
 }
 
 /* HOVERING */
