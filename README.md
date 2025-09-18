@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/ichane31/blog-card)
+- Live Site URL: [Live Demo](https://blog-card-three-beta.vercel.app/)
 
 ## My process
 
@@ -108,7 +108,6 @@ Areas I want to continue focusing on in future projects:
 - [MDN Web Docs - CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) - Essential for understanding CSS variables and creating maintainable stylesheets
 - [Web.dev - Variable Fonts Guide](https://web.dev/variable-fonts/) - Comprehensive guide that helped me implement the Figtree variable font correctly
 - [CSS-Tricks - Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Always helpful for perfecting flexbox layouts
-- [Frontend Mentor Community](https://www.frontendmentor.io/community) - Great place to get feedback and see other solutions
 
 ## Author
 
